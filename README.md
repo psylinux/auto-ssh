@@ -3,7 +3,7 @@ This script will mount a remote file system using ssh and will open a ssh sessio
 You must set the Environment Variables first in order to use this script
 
 
-# Set environment variables
+## Set environment variables
 RSA_KEY="/home/user/.ssh/id_rsa"                # Your RSA private key
 MNT_POINT="/home/user/mount_here"               # The mount point you like
 REMOTE_IP="domain.com"                          # The remote IP or domain (FQDN)
