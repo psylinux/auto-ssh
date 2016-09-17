@@ -18,12 +18,18 @@ REMOTE_SSH_PORT="22"				# SSH Port (Default: 22)
 
 echo "---------------------------------------------------------------------------"
 
+# Checking for sshfs
 if [[ `dpkg -l | grep sshfs` == "" ]]; then
 {
 	echo " In order to use this script you must install sshfs first!"		
 	echo " [+] Installing sshfs..."
 	sudo apt-get update && sudo apt-get -y install sshfs
 }
+fi
+
+# Creating Mount Point Directory
+if [ ! -d $MNT_POINT ]; then 
+	mkdir -p $MNT_POINT
 fi
 
 if [[ "$1" == "-c" ]]; then
