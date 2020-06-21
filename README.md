@@ -1,4 +1,4 @@
-# auto_ssh.sh
+# auto-ssh.sh
 
 This script will mount a auto file system using ssh and will open a ssh session with X11 Forward activated.
 You must set the Environment Variables first in order to use this script.
@@ -6,7 +6,7 @@ You must set the Environment Variables first in order to use this script.
 
 ## How to Install
 
-git clone https://github.com/psylinux/auto_ssh.git
+git clone https://github.com/psylinux/auto-ssh.git
 
 ## Edit auto_ssh.sh and Set environment variables
 	- Your RSA private key: RSA_KEY="/home/user/.ssh/id_rsa"
@@ -20,7 +20,7 @@ git clone https://github.com/psylinux/auto_ssh.git
 ## How to use
 
 ```sh
-$ cd auto_ssh/
-$ chmod +x auto_ssh.sh
-$ ./auto_ssh.sh
+$ cd auto-ssh/
+$ chmod +x auto-ssh.sh
+$ ./auto-ssh.sh
 ```
