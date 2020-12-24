@@ -24,3 +24,8 @@ $ cd auto-ssh/
 $ chmod +x auto-ssh.sh
 $ ./auto-ssh.sh
 ```
+
+## ToDo
+
+- Capability to pass args in the command line.
+- If no args are passed, such as REMOTE_SSH_PORT, REMOTE_USER and REMOTE_DIR then keep the default values.
